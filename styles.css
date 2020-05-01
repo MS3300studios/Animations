@@ -1,0 +1,32 @@
+body{
+    background: linear-gradient(to left, #91EAE4, #86A8E7, #7F7FD5); 
+}
+.block{
+    content: "";
+    display: block;
+    width: 100px;
+    height: 100px;
+    background: green;
+}
+#block1{
+    animation-name: anim;
+    animation-duration: 4s;
+    animation-delay: 0.2s;
+    background: linear-gradient(to left, #f5af19, #f12711); 
+    margin-left: 0px;
+    /* transition: all 2s ease-in-out; */
+}
+@keyframes anim{
+    0%{
+        background: linear-gradient(to left, #f5af19, #f12711); 
+        margin-left: 0px;
+    }
+    50%{
+        background: linear-gradient(to left, #f12711,#f5af19); 
+        margin-left: 150px;
+    }
+    100%{
+        background: linear-gradient(to left, #f5af19, #f12711); 
+        margin-left: 0px;;
+    }
+}
