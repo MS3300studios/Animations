@@ -1,5 +1,13 @@
 body{
-    background: linear-gradient(to left, #91EAE4, #86A8E7, #7F7FD5); 
+    background: #7F7FD5; 
+}
+body:hover{
+    background: lightblue;
+    transition: linear 1s all;
+}
+#container{
+    display: flex;
+    justify-content: center;
 }
 .block{
     content: "";
@@ -18,7 +26,7 @@ body{
 #block1:hover{
     animation-name: v1;
     animation-duration: 1s;
-    animation-delay: 0.2s;
+    animation-delay: 0.01s;
 }
 @keyframes v1{
     0%{
@@ -41,7 +49,7 @@ body{
 #block2:hover{
     animation-name: v2;
     animation-duration: 2s;
-    animation-delay: 0.2s;
+    animation-delay: 0.01s;
 }
 @keyframes v2{
     0%{
@@ -71,21 +79,48 @@ body{
 #block3:hover{
     animation-name: v3;
     animation-duration: 2s;
-    animation-delay: 0.2s;
+    animation-delay: 0.01s;
     border: 10px dotted #fff;
 }
 @keyframes v3{
     0%{
         background: orchid;
         border-width: 10px;
+        border-color: #fff;
     }
     50%{ 
         background: rgb(8, 176, 206);
         border-width: 50px;
+        border-color: rgb(46, 60, 255);
     }
     100%{
         background: orchid;
         border-width: 10px;
+        border-color: #fff;
     }
 }
-
+#block4{
+    background: seagreen;
+}
+#block4:hover{
+    animation-name: v4;
+    animation-duration: 2s;
+    animation-delay: 0.01s;
+}
+@keyframes v4{
+    0%{
+        background: seagreen;
+        transform: rotate(0deg);
+        border-color: #fff;
+    }
+    50%{ 
+        background: rgb(133, 218, 77);
+        transform: rotate(180deg);
+        border-color: rgb(35, 77, 8) ;
+    }
+    100%{
+        background: seagreen;
+        transform: rotate(0deg);
+        border-color: #fff;
+    }
+}
