@@ -8,7 +8,8 @@ body{
     height: 100px;
     background: green;
 }
-#block1{
+
+#block1:hover{
     animation-name: anim;
     animation-duration: 4s;
     animation-delay: 0.2s;
@@ -19,14 +20,14 @@ body{
 @keyframes anim{
     0%{
         background: linear-gradient(to left, #f5af19, #f12711); 
-        margin-left: 0px;
+        
     }
     50%{
         background: linear-gradient(to left, #f12711,#f5af19); 
-        margin-left: 150px;
+        width: 300px;
     }
     100%{
         background: linear-gradient(to left, #f5af19, #f12711); 
-        margin-left: 0px;;
+        width: 100px;
     }
 }
